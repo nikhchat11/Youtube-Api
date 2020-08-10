@@ -1,11 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import {AntDesign,Ionicons,MaterialIcons} from '@expo/vector-icons'
 import { useNavigation ,useTheme} from '@react-navigation/native';
-import Constant from 'expo-constants'
 import {useDispatch,useSelector} from 'react-redux'
 
-export default function Header({height}) {
+export default function Header() {
     const navigation = useNavigation()
     const dispatch = useDispatch()
     const {colors} =  useTheme()

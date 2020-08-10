@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { StyleSheet, Text, View,ScrollView,TextInput,FlatList,ActivityIndicator,Animated} from 'react-native';
+import { View,TextInput,FlatList,ActivityIndicator} from 'react-native';
 import {Ionicons} from '@expo/vector-icons'
 import MiniCard from '../components/MiniCard'
 import Constant from 'expo-constants'
@@ -14,7 +14,7 @@ const SearchScreen = ({navigation})=>{
     const [value,setValue] = useState("")
     // const [miniCardData,setMiniCard] = useState([])
     const dispatch = useDispatch()
-    const miniCardData = useSelector(state=>{
+    const miniCardData = useSelector(state  =>{
         return state.cardData
     })
     const [loading,setLoading] = useState(false)
